@@ -1,0 +1,110 @@
+{
+  "id": "theme-pirates-caribbean",
+  "name": "Piratas del Caribe",
+  "version": "1.0.0",
+  "apiVersion": 18,
+  "entry": "plugin.js",
+  "description": "Tema para toda la app: noche en alta mar, oro de tesoro y pergamino. Incluye logo propio de Kino con calavera y tricornio.",
+  "hosts": [],
+  "capabilities": ["screen"],
+  "categories": ["themes"],
+  "color": "#D4A537",
+  "icon": "icon.png",
+  "screen": {
+    "label": "Piratas",
+    "labelEn": "Pirates",
+    "opensFrom": ["settings"],
+    "settingsButton": { "label": "Ver tema Piratas", "labelEn": "See Pirates theme" }
+  },
+  "appThemes": [
+    {
+      "id": "piratas-caribe",
+      "name": { "es": "Piratas del Caribe", "en": "Pirates of the Caribbean" },
+      "experience": "full",
+      "pluginColors": "respect",
+      "colors": {
+        "accent": "#D4A537",
+        "onAccent": "#1A1103",
+        "background": "#060B10",
+        "surface": "#0E1A22",
+        "surfaceHigh": "#16262F",
+        "railPanel": "#09131A",
+        "textPrimary": "#F4EAD0",
+        "textSecondary": "#B9AE92",
+        "focus": "#F0CD6E",
+        "onFocus": "#1A1103",
+        "outline": "#2C3E47",
+        "border": "#8A6A26",
+        "placeholderTop": "#16262F",
+        "placeholderBottom": "#0A141A",
+        "success": "#4FA58A",
+        "warning": "#E0A030",
+        "error": "#D9534F",
+        "favorite": "#E25555",
+        "scrim": "#000000"
+      },
+      "background": {
+        "type": "gradient",
+        "colors": ["#060B10", "#0B1B26", "#050A0E"],
+        "angle": 180
+      },
+      "shape": {
+        "cardRadius": 8,
+        "channelRadius": 8,
+        "buttonRadius": 6,
+        "chipRadius": 6,
+        "dialogRadius": 10,
+        "inputRadius": 6,
+        "dialogBorder": 2,
+        "menuBorder": 1,
+        "headerBorder": 1,
+        "cardBorder": 1,
+        "panelBorder": 1
+      },
+      "typography": { "scale": 1.05, "titleScale": 1.1, "bodyScale": 1.0 },
+      "elevation": { "cardShadow": 0.6, "dialogShadow": 0.8, "heroScrim": 0.8 },
+      "motion": { "focusZoom": 1.08, "crossfadeMs": 350, "heroDrift": "on" },
+      "player": {
+        "buttonScale": 1.05,
+        "playButtonScale": 1.2,
+        "seekBarScale": 1.2,
+        "labelScale": 1.0,
+        "buttonShape": "circle"
+      },
+      "tv": {
+        "typography": { "scale": 1.0 },
+        "motion": { "focusZoom": 1.1 }
+      },
+      "adjustable": {
+        "colors.accent": { "swatches": ["#D4A537", "#2EC4B6", "#C9D1D3", "#E58A3B"] },
+        "colors.focus": { "swatches": ["#F0CD6E", "#FFFFFF", "#5FE0D2"] },
+        "shape.cardRadius": { "min": 0, "max": 20 },
+        "typography.scale": { "min": 1.0, "max": 1.3 },
+        "background": true
+      },
+      "logo": {
+        "wordmark": {
+          "size": [112, 40],
+          "paths": [
+            { "d": "M0 12 H7 V23 L17 12 H26 L14 26 L27 40 H18 L7 29 V40 H0 Z", "fill": "textPrimary" },
+            { "d": "M33 12 H40 V40 H33 Z", "fill": "textPrimary" },
+            { "d": "M47 12 H55 L65 29 V12 H72 V40 H64 L54 23 V40 H47 Z", "fill": "textPrimary" },
+            { "d": "M78 26 A14 14 0 1 1 106 26 A14 14 0 1 1 78 26 Z M85 26 A7 7 0 1 0 99 26 A7 7 0 1 0 85 26 Z", "fill": "accent" },
+            { "d": "M74 15 L80 6 Q92 1 104 6 L110 15 Q92 9 74 15 Z", "fill": "accent" },
+            { "d": "M89.8 8.5 A2.2 2.2 0 1 1 94.2 8.5 A2.2 2.2 0 1 1 89.8 8.5 Z", "fill": "onAccent" }
+          ]
+        },
+        "mark": {
+          "size": [40, 40],
+          "paths": [
+            { "d": "M1 20 A19 19 0 1 1 39 20 A19 19 0 1 1 1 20 Z", "fill": "accent" },
+            { "d": "M10 17 A10 10 0 0 1 30 17 V22 Q30 25 27 26 V31 H13 V26 Q10 25 10 22 Z", "fill": "onAccent" },
+            { "d": "M12.9 19 A2.6 2.6 0 1 1 18.1 19 A2.6 2.6 0 1 1 12.9 19 Z", "fill": "accent" },
+            { "d": "M21.9 19 A2.6 2.6 0 1 1 27.1 19 A2.6 2.6 0 1 1 21.9 19 Z", "fill": "accent" },
+            { "d": "M20 22 L18.4 25.5 H21.6 Z", "fill": "accent" }
+          ]
+        }
+      }
+    }
+  ]
+}
